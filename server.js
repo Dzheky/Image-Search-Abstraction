@@ -28,7 +28,7 @@ mongo.connect(dburl, function(dberr, db) {
         })
     })
     //get the search results
-    app.get('/:search*', function(req, res) {
+    app.get('/search/:search*', function(req, res) {
         res.writeHead(200, {'Conten-Type':'application/JSON'});
         var searchResults;
         var skip = 0;

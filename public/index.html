@@ -11,19 +11,113 @@
         <blockquote>
             <h2>User Story</h2>
             <ul>
-                <li>1)</li>
-                <li>2)</li>
-                <li>3)</li>
+                <li>1) I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</li>
+                <li>2) I can paginate through the responses by adding a ?offset=2 parameter to the URL.</li>
+                <li>3) I can get a list of the most recently submitted search strings.</li>
                 <br>
             </ul>
         </blockquote>  
         
-        <h3>Sample Intput:</h3>
-        <code>blah balh balh</code>
+        <h3>Sample Intputs:</h3>
+        <code>https://evgeny-image-search.herokuapp.com/search/lolcats</code><br>
+        <code>https://evgeny-image-search.herokuapp.com/latest</code>
         <br>
-        <h3>Sample Output:</h3>
-        <code>blah blah blah</code>
-        
+        <h3>Sample Outputs:</h3>
+        <code>[<br>
+{<br>
+"Title": "Rosey675's Weirdly Awesome Panfu Blog: LOLcats",<br>
+"ImageURL": "http://3.bp.blogspot.com/-dZNLWrpHVdQ/UG4PoBq4NLI/AAAAAAAAA_c/6Yt4S1CgiiQ/s1600/LOLCATS2.jpg",<br>
+"SourceURL": "http://rosey675.blogspot.com/2012/10/lolcats.html"<br>
+},<br>
+{<br>
+"Title": "Lolcats 22 Wide Wallpaper - Funnypicture.org",<br>
+"ImageURL": "http://funnypicture.org/wallpaper/2015/06/lolcats-6-background.jpg",<br>
+"SourceURL": "http://funnypicture.org/lolcats-22-wide-wallpaper.html"<br>
+},<br>
+{<br>
+"Title": "Hilarious LOLcats Seen On www.coolpicturegallery.us",<br>
+"ImageURL": "http://4.bp.blogspot.com/-epxUtTpidgM/Tl0LrfIwPOI/AAAAAAAAdOY/rwZA0Zb_jWg/s1600/lolcats5.jpg",<br>
+"SourceURL": "http://internationalpics.blogspot.com/2011/08/hilarious-lolcats.html"<br>
+},<br>
+{<br>
+"Title": "lolcats",<br>
+"ImageURL": "http://www.comparebusinessproducts.com/content/assets/40/generic/meme-lolcats/lolcats.jpg",<br>
+"SourceURL": "http://www.comparebusinessproducts.com/fyi/13-internet-memes-opened-doors-opportunities"<br>
+},<br>
+{<br>
+"Title": "Rosey675's Weirdly Awesome Panfu Blog: LOLcats",<br>
+"ImageURL": "http://4.bp.blogspot.com/--0q5vRcd-lk/UG4Pozc-HcI/AAAAAAAAA_k/g9gw7Sg7w8g/s1600/LOLCATS6.jpg",<br>
+"SourceURL": "http://rosey675.blogspot.com/2012/10/lolcats.html"<br>
+},<br>
+{<br>
+"Title": "Pieroblog: Lolcats November 2011 - 2",<br>
+"ImageURL": "http://1.bp.blogspot.com/-Hm2EgO-axuE/TrZI10HtkZI/AAAAAAAAArw/5l_jgoT3Mhk/s1600/lolcats-037.jpg",<br>
+"SourceURL": "http://pieroblog-citta.blogspot.com/2011/11/lolcats-november-2011-2.html"<br>
+},<br>
+{<br>
+"Title": "lolcatradiator let me check my emails lolcat 4 lolcats screem lolcats2",<br>
+"ImageURL": "http://3219a2.medialib.glogster.com/media/75/7587aa440ca79e601cf2643be0d2040f5ff3c79cb9841276bed6073448822565/lolcats2.png",<br>
+"SourceURL": "http://www.glogster.com/over9000/wtf-lol-cats/g-6mp6kv91nmpa7h9gbd22sa0"<br>
+},<br>
+{<br>
+"Title": "lolcats anyone? - icanhascheezburger Photo (7740235) - Fanpop",<br>
+"ImageURL": "http://images2.fanpop.com/images/photos/7700000/lolcats-anyone-icanhascheezburger-7740235-500-363.jpg",<br>
+"SourceURL": "http://www.fanpop.com/clubs/icanhascheezburger/images/7740235/title/lolcats-anyone-photo"<br>
+},<br>
+{<br>
+"Title": "LOLCats - You Can Now Remove USB Cat Safely",<br>
+"ImageURL": "http://2.bp.blogspot.com/-UTfReaVIzog/UZkV6aGRjdI/AAAAAAAAIN0/84CcNBRrPco/s1600/LOLCats-lol-cats-52.jpg",<br>
+"SourceURL": "http://photography-galleries.blogspot.com/2013_05_19_archive.html"<br>
+},<br>
+{<br>
+"Title": "lolcats wallpaper1 by antoniopratas on DeviantArt",<br>
+"ImageURL": "http://fc01.deviantart.net/fs22/f/2007/321/3/d/lolcats_wallpaper1_by_antoniopratas.jpg",<br>
+"SourceURL": "http://antoniopratas.deviantart.com/art/lolcats-wallpaper1-70043163"<br>
+}<br>
+]</code>
+<br>
+<code>[
+{<br>
+"term": "lolcats funny",<br>
+"when": "2016-07-16T12:55:57.954Z"<br>
+},<br>
+{<br>
+"term": "lolcats funny",<br>
+"when": "2016-07-16T12:55:41.023Z"<br>
+},<br>
+{<br>
+"term": "lolcats funny",<br>
+"when": "2016-07-16T12:34:01.340Z"<br>
+},<br>
+{<br>
+"term": "lolcats funny",<br>
+"when": "2016-07-16T11:08:39.965Z"<br>
+},<br>
+{<br>
+"term": "lolcats funny",<br>
+"when": "2016-07-16T10:34:44.559Z"<br>
+},<br>
+{<br>
+"term": "lolcats funny",<br>
+"when": "2016-07-16T10:25:38.742Z"<br>
+},<br>
+{<br>
+"term": "lolcats funny",<br>
+"when": "2016-07-16T10:24:45.250Z"<br>
+},<br>
+{<br>
+"term": "lolcats funny",<br>
+"when": "2016-07-16T10:14:01.192Z"<br>
+},<br>
+{<br>
+"term": "lolcats funny",<br>
+"when": "2016-07-16T09:50:23.857Z"<br>
+},<br>
+{<br>
+"term": "grumpy cat funny",<br>
+"when": "2016-07-16T09:50:23.805Z"<br>
+}<br>
+]</code>
     </div>
 </body>
 </html>
